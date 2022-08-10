@@ -42,6 +42,8 @@ console.log(division);
 var modulusOrRemainder = num1 % num2;
 console.log(modulusOrRemainder);
 
+/* -------------------------------------------------------- */
+
 
 // ৪. তুমি কি দুইটা ভেরিয়েবল এরমধ্যে তুলনা করতে পারো। কম্পারিজন করতে পারো। যে দুইটা ভেরিয়েবল এর মধ্যে প্রথমটা সেকেন্ডটা এর চাইতে ছোট, বড়, অসমান, সমান , ছোট বা সমান, বড় বা সমান। এইগুলা চেক করতে পারো। অর্থাৎ <, >, ==, !=, <=, >= চিহ্নগুলা ব্যবহার করতে পারো। তাহলে দুইটা সংখ্যা টাইপের ভেরিয়েবল ডিক্লেয়ার করে তাদেরকে এই ছয়ভাবে তুলনা করে কোড লিখে ফেলো। 
 
@@ -61,6 +63,8 @@ var comparison = num1 <= num2;
 console.log(comparison);
 var comparison = num1 >= num2;
 console.log(comparison);
+
+/* -------------------------------------------------------- */
 
 
 // ৫. তোমার যদি দুইটা শর্ত পূরণ করতে বলে। এবং দুইটা শর্তের মধ্যে দুইটাই পূরণ করতে হবে। তাহলে তুমি কি সেটা চেক করতে পারবে? একইভাবে যদি বলে তুমি দুইটা শর্তের যেকোন একটা পূরণ করতে পারবে। অর্থাৎ তুমি && এবং || এর ব্যবহার করতে পারো কিনা। যদি পারো তাহলে নিজে নিজে এই রকমের কোড লিখে ফেলো। 
@@ -82,6 +86,8 @@ else{
     console.log('You will not a great job');
 }
 
+/* -------------------------------------------------------- */
+
 
 
 // ৬. তুমি কি একটা শর্ত পালন করলে একটা কিছু করবে। শর্ত পূরণ না করলে অন্য কিছু একটা করবে এমন কোড লিখতে পারবে। অর্থাৎ তুমি কি if-else এর কোড লিখতে পারবে। পারলে একটা কোড লিখে ফেলো 
@@ -94,6 +100,9 @@ else{
     console.log('You will not a great job');
 }
 
+/* -------------------------------------------------------- */
+
+
 
 // ৭. তোমাকে যদি বলে একটা while লুপ দিয়ে ৭ থেকে ১৯ পর্যন্ত যতগুলা বিজোড় সংখ্যা আছে সেগুলা দেখাতে। তুমি কি সেটা দেখাতে পারবে? পারলে সেই কোড লিখে ফেলো। 
 
@@ -103,6 +112,9 @@ while (number <= 19) {
     console.log(number);
     number = number + 2;
 }
+
+/* -------------------------------------------------------- */
+
 
 
 // ৮. তোমাকে যদি বলা হয় তুমি একটা array ডিক্লেয়ার করবে। এবং সেটার মধ্যে কয়টা উপাদান আছে সেটা বের করবে হবে। সেই array এর এর মধ্যে চতুর্থ পজিশন এর উপাদান চেইঞ্জ করতে হবে। array এর মধ্যে দুইটা উপাদান যোগ করতে হবে। এবং একটা উপাদান কে বের করে দিতে হবে। তুমি কি সেটা করতে পারবে। 
@@ -117,6 +129,8 @@ console.log(array);
 array.pop();
 console.log(array);
 
+/* -------------------------------------------------------- */
+
 
 // ৯. তুমি কি একটা ফর লুপ দিয়ে কোন একটা array এর সবগুলা উপাদানকে দেখাতে পারবে। সেটা রেগুলার for লুপ হোক বা for of হোক। হলে সেই স্টাইলে একটা কোড লিখে ফেলো। 
 
@@ -126,6 +140,8 @@ for(let i = 0; i < array.length; i++){
     console.log(array[i]);
 }
 
+/* -------------------------------------------------------- */
+
 
 
 // ১০. তোমাকে যদি বলা হয়। একটা array এর মধ্যে ৮০ এর চাইতে বড় সংখ্যা থাকলে সেগুলাকে console log করে দেখাতে সেটা কি তুমি পারবে? তাহলে তুমি সেই কোড করে ফেলো 
@@ -134,20 +150,29 @@ for(let i = 0; i < array.length; i++){
 var myNumbers = [100, 30, 150, 310, 80, 20, 50, 23, 90];
 for(var i = 0; i < myNumbers.length; i++){
     if(myNumbers[i] <= 80){
-        continue
+        continue;
     }
     console.log('This number is > 80: ', myNumbers[i]);
 }
+
+/* -------------------------------------------------------- */
+
 
 
 // ১১. তিনটা সংখ্যার গুনফল বের করে ফাইনাল রেজাল্ট আউটপুট হিসেবে রিটার্ন করতে হবে। তুমি কি সেই কোড লিখতে পারবে। যদি পারো তাহলে সেই কোড লিখে ফেলো। 
 
 // Ans:
-var num1 = 20;
-var num2 = 30;
-var num3 = 13;
-var multipliction = num1 * num2 * num3;
-console.log(multipliction);
+
+function multiplication(a, b, c){
+    const result = a * b * c;
+
+    return result;
+}
+
+console.log('Multiply:', multiplication(10, 30, 50));
+
+
+/* -------------------------------------------------------- */
 
 
 // ১২. একটা অবজেক্ট ডিক্লেয়ার করবে। সেটাতে তিনটা প্রপার্টি থাকবে। এবং কোন একটা প্রোপার্টি এর মান চেইঞ্জ করবা। 
@@ -173,6 +198,7 @@ console.log(student);
 // Ans:
 function feetToInch(feet){
     const inch = feet * 12;
+
     return inch
 }
 
@@ -185,6 +211,7 @@ console.log('Inch:', feetToInch(5));
 // Ans:
 function centimeterToMeter(centimeter){
     const meter = centimeter / 100;
+
     return meter;
 }
 
@@ -217,7 +244,6 @@ function paperRequirements(book1, book2, book3){
     let thirdBookPaper = 300;
 
     let firstBookPaperTotal = book1 * firstBookPaper;
-    // console.log(firstBookPaperTotal);
     let secondBookPaperTotal = book2 * secondBookPaper;
     let thirdBookPaperTotal = book3 * thirdBookPaper;
     let totalPaper = firstBookPaperTotal + secondBookPaperTotal + thirdBookPaperTotal;
@@ -264,6 +290,9 @@ function positiveNumbers(number){
         let element = number[i];
         if(element > 0){
             positiveNumber.push(element);
+        }
+        else{
+            break;
         }
     }
     return positiveNumber;
